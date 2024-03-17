@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2494.6667
     height: 1397.3334
   m_ShowMode: 4
-  m_Title: "\u30D1\u30C3\u30B1\u30FC\u30B8\u30DE\u30CD\u30FC\u30B8\u30E3\u30FC"
+  m_Title: Git for Unity
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 131
+  controlID: 116
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 97
+  controlID: 44
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 41
+  controlID: 45
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: PackageManagerWindow
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -215,9 +215,9 @@ MonoBehaviour:
     y: 0
     width: 1400
     height: 791.3333
-  m_MinSize: {x: 802, y: 271}
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 20}
@@ -226,8 +226,8 @@ MonoBehaviour:
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 13}
-  m_Selected: 4
-  m_LastSelected: 2
+  m_Selected: 0
+  m_LastSelected: 3
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -247,14 +247,14 @@ MonoBehaviour:
     y: 791.3333
     width: 2018
     height: 556.00006
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 22}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
   - {fileID: 22}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -282,7 +282,7 @@ MonoBehaviour:
   - {fileID: 24}
   - {fileID: 12}
   m_Selected: 2
-  m_LastSelected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,7 +317,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: 1408.6542647
+  progressMessageClearTime: 911.5063076
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
@@ -337,8 +337,19 @@ MonoBehaviour:
     treeLocals:
       IsRemote: 0
       folders:
-        keys: []
-        values: []
+        keys:
+        - Local branches
+        values:
+        - path: Local branches
+          label: Local branches
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -347,7 +358,27 @@ MonoBehaviour:
       displayRootNode: 1
       isSelectable: 1
       isCheckable: 0
-      nodes: []
+      nodes:
+      - path: Local branches
+        label: Local branches
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: master
+        label: master
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 1
+        treeIsCheckable: 0
+        checkState: 0
       selectedNode:
         path: 
         label: 
@@ -362,8 +393,19 @@ MonoBehaviour:
     treeRemotes:
       IsRemote: 1
       folders:
-        keys: []
-        values: []
+        keys:
+        - Remote branches
+        values:
+        - path: Remote branches
+          label: Remote branches
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -372,7 +414,17 @@ MonoBehaviour:
       displayRootNode: 1
       isSelectable: 1
       isCheckable: 0
-      nodes: []
+      nodes:
+      - path: Remote branches
+        label: Remote branches
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
       selectedNode:
         path: 
         label: 
@@ -387,26 +439,28 @@ MonoBehaviour:
     mode: 0
     newBranchName: 
     scroll: {x: 0, y: 0}
-    disableDelete: 0
-    disableCreate: 0
+    disableDelete: 1
+    disableCreate: 1
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2024-03-17T01:03:33.039+09:00
+      cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2024-03-17T01:03:28.906+09:00
+      cacheType: 1
     currentBranch:
-      name: 
+      name: master
       tracking: 
     currentRemote:
-      name: 
-      url: 
+      name: origin
+      url: git@github.com:LawrenceTurnerW/ARMoneyThrowing.git
       login: 
       user: 
       host: 
       function: 0
       token: 
-    localBranches: []
+    localBranches:
+    - name: master
+      tracking: 
     remoteBranches: []
   changesView:
     currentBranchHasUpdate: 0
@@ -419,35 +473,12 @@ MonoBehaviour:
     treeChanges:
       assets:
         keys:
-        - 00000000000000001000000000000000
-        - 0c3e28dce05b5334e9fca0a74b530c14
-        - e8a735b411e2d704981715742845f9f9
-        - 85e14c67b43eda240a0fd71e85db869a
-        - 27df60213510aa14a8c859d727686f54
-        - 9191941410db59f46b15503dc7efef69
+        - 00000000000000004000000000000000
         values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Oculus
-          label: Oculus
+        - path: ProjectSettings\ProjectSettings.asset
+          label: ProjectSettings.asset
           level: 1
-          isFolder: 1
+          isFolder: 0
           isContainer: 0
           isCollapsed: 0
           isHidden: 0
@@ -456,93 +487,20 @@ MonoBehaviour:
           checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
+            path: ProjectSettings\ProjectSettings.asset
+            fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ProjectSettings.asset
+            projectPath: ProjectSettings\ProjectSettings.asset
             originalPath: 
             indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Oculus\OculusProjectConfig.asset
-          label: OculusProjectConfig.asset
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Oculus\OculusProjectConfig.asset
-            fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus\OculusProjectConfig.asset
-            projectPath: Assets\Oculus\OculusProjectConfig.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Resources
-          label: Resources
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Resources\OculusRuntimeSettings.asset
-          label: OculusRuntimeSettings.asset
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Resources\OculusRuntimeSettings.asset
-            fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OculusRuntimeSettings.asset
-            projectPath: Assets\Resources\OculusRuntimeSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Resources\OVRPlatformToolSettings.asset
-          label: OVRPlatformToolSettings.asset
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Resources\OVRPlatformToolSettings.asset
-            fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OVRPlatformToolSettings.asset
-            projectPath: Assets\Resources\OVRPlatformToolSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
+            workTreeStatus: 3
       folders:
         keys:
-        - Assets
-        - Assets\Oculus
-        - Assets\Resources
-        - Packages
+        - ProjectSettings
+        - UserSettings
+        - UserSettings\Layouts
         values:
-        - path: Assets
-          label: Assets
+        - path: ProjectSettings
+          label: ProjectSettings
           level: 0
           isFolder: 1
           isContainer: 0
@@ -559,45 +517,27 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Oculus
-          label: Oculus
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Resources
-          label: Resources
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Packages
-          label: Packages
+        - path: UserSettings
+          label: UserSettings
           level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings\Layouts
+          label: Layouts
+          level: 1
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -641,8 +581,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets
-        label: Assets
+      - path: ProjectSettings
+        label: ProjectSettings
         level: 0
         isFolder: 1
         isContainer: 0
@@ -659,8 +599,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Oculus.meta
-        label: Oculus.meta
+      - path: ProjectSettings\ProjectSettings.asset
+        label: ProjectSettings.asset
         level: 1
         isFolder: 0
         isContainer: 0
@@ -671,213 +611,51 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Oculus.meta
-          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus.meta
-          projectPath: Assets\Oculus.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Oculus
-        label: Oculus
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Oculus\OculusProjectConfig.asset
-        label: OculusProjectConfig.asset
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Oculus\OculusProjectConfig.asset
-          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus\OculusProjectConfig.asset
-          projectPath: Assets\Oculus\OculusProjectConfig.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Oculus\OculusProjectConfig.asset.meta
-        label: OculusProjectConfig.asset.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Oculus\OculusProjectConfig.asset.meta
-          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus\OculusProjectConfig.asset.meta
-          projectPath: Assets\Oculus\OculusProjectConfig.asset.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Resources.meta
-        label: Resources.meta
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Resources.meta
-          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources.meta
-          projectPath: Assets\Resources.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Resources
-        label: Resources
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Resources\OculusRuntimeSettings.asset
-        label: OculusRuntimeSettings.asset
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Resources\OculusRuntimeSettings.asset
-          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OculusRuntimeSettings.asset
-          projectPath: Assets\Resources\OculusRuntimeSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Resources\OculusRuntimeSettings.asset.meta
-        label: OculusRuntimeSettings.asset.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Resources\OculusRuntimeSettings.asset.meta
-          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OculusRuntimeSettings.asset.meta
-          projectPath: Assets\Resources\OculusRuntimeSettings.asset.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Resources\OVRPlatformToolSettings.asset
-        label: OVRPlatformToolSettings.asset
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Resources\OVRPlatformToolSettings.asset
-          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OVRPlatformToolSettings.asset
-          projectPath: Assets\Resources\OVRPlatformToolSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Resources\OVRPlatformToolSettings.asset.meta
-        label: OVRPlatformToolSettings.asset.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Resources\OVRPlatformToolSettings.asset.meta
-          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OVRPlatformToolSettings.asset.meta
-          projectPath: Assets\Resources\OVRPlatformToolSettings.asset.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Packages
-        label: Packages
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Packages\manifest.json
-        label: manifest.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Packages\manifest.json
-          fullPath: H:\UnityProject\ARMoneyThrowing\Packages\manifest.json
-          projectPath: Packages\manifest.json
+          path: ProjectSettings\ProjectSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ProjectSettings.asset
+          projectPath: ProjectSettings\ProjectSettings.asset
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
-      - path: Packages\packages-lock.json
-        label: packages-lock.json
+      - path: UserSettings
+        label: UserSettings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts
+        label: Layouts
         level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        label: default-2022.dwlt
+        level: 2
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -887,9 +665,9 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Packages\packages-lock.json
-          fullPath: H:\UnityProject\ARMoneyThrowing\Packages\packages-lock.json
-          projectPath: Packages\packages-lock.json
+          path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: H:\UnityProject\ARMoneyThrowing\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
@@ -913,80 +691,482 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
-    - path: Assets\Oculus.meta
-      fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus.meta
-      projectPath: Assets\Oculus.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Oculus\OculusProjectConfig.asset
-      fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus\OculusProjectConfig.asset
-      projectPath: Assets\Oculus\OculusProjectConfig.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Oculus\OculusProjectConfig.asset.meta
-      fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus\OculusProjectConfig.asset.meta
-      projectPath: Assets\Oculus\OculusProjectConfig.asset.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Resources.meta
-      fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources.meta
-      projectPath: Assets\Resources.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Resources\OculusRuntimeSettings.asset
-      fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OculusRuntimeSettings.asset
-      projectPath: Assets\Resources\OculusRuntimeSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Resources\OculusRuntimeSettings.asset.meta
-      fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OculusRuntimeSettings.asset.meta
-      projectPath: Assets\Resources\OculusRuntimeSettings.asset.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Resources\OVRPlatformToolSettings.asset
-      fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OVRPlatformToolSettings.asset
-      projectPath: Assets\Resources\OVRPlatformToolSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Resources\OVRPlatformToolSettings.asset.meta
-      fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OVRPlatformToolSettings.asset.meta
-      projectPath: Assets\Resources\OVRPlatformToolSettings.asset.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Packages\manifest.json
-      fullPath: H:\UnityProject\ARMoneyThrowing\Packages\manifest.json
-      projectPath: Packages\manifest.json
+    - path: ProjectSettings\ProjectSettings.asset
+      fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ProjectSettings.asset
+      projectPath: ProjectSettings\ProjectSettings.asset
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    - path: Packages\packages-lock.json
-      fullPath: H:\UnityProject\ARMoneyThrowing\Packages\packages-lock.json
-      projectPath: Packages\packages-lock.json
+    - path: UserSettings\Layouts\default-2022.dwlt
+      fullPath: H:\UnityProject\ARMoneyThrowing\UserSettings\Layouts\default-2022.dwlt
+      projectPath: UserSettings\Layouts\default-2022.dwlt
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    changedFilesText: 10 changed files
+    changedFilesText: 2 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2024-03-16T22:23:46.763+09:00
+      updatedTimeString: 2024-03-17T01:18:23.470+09:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2024-03-16T22:25:24.094+09:00
+      updatedTimeString: 2024-03-17T01:03:28.926+09:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2024-03-17T01:03:31.047+09:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: 2b4a23cbdf8ca8b0e027e5e873e286c31c7d6f5d
+      mergeA: 
+      mergeB: 
+      authorName: LawrenceTurnerW
+      authorEmail: watawata.takatan@gmail.com
+      commitEmail: watawata.takatan@gmail.com
+      commitName: LawrenceTurnerW
+      summary: "\u30D1\u30B9\u30B9\u30EB\u30FC\uFF06\u30CF\u30F3\u30C9\u30C8\u30E9\u30C3\u30AD\u30F3\u30B0\u5316"
+      description: 
+      timeString: 2024-03-17T00:31:01.000+09:00
+      commitTimeString: 2024-03-17T00:31:01.000+09:00
+      changes:
+      - path: Assets\Oculus\OculusProjectConfig.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus\OculusProjectConfig.asset
+        projectPath: Assets\Oculus\OculusProjectConfig.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\OVRBuildConfig.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OVRBuildConfig.asset
+        projectPath: Assets\Resources\OVRBuildConfig.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\OVRBuildConfig.asset.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OVRBuildConfig.asset.meta
+        projectPath: Assets\Resources\OVRBuildConfig.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\XR\Settings\OculusSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Settings\OculusSettings.asset
+        projectPath: Assets\XR\Settings\OculusSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ProjectSettings.asset
+        projectPath: ProjectSettings\ProjectSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\SceneTemplateSettings.json
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\SceneTemplateSettings.json
+        projectPath: ProjectSettings\SceneTemplateSettings.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: 2b978edb4554507ff527035b5f7309f194a9bf12
+      mergeA: 
+      mergeB: 
+      authorName: LawrenceTurnerW
+      authorEmail: watawata.takatan@gmail.com
+      commitEmail: watawata.takatan@gmail.com
+      commitName: LawrenceTurnerW
+      summary: "\u8A2D\u5B9A"
+      description: 
+      timeString: 2024-03-16T22:28:28.000+09:00
+      commitTimeString: 2024-03-16T22:28:28.000+09:00
+      changes:
+      - path: Packages\manifest.json
+        fullPath: H:\UnityProject\ARMoneyThrowing\Packages\manifest.json
+        projectPath: Packages\manifest.json
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Packages\packages-lock.json
+        fullPath: H:\UnityProject\ARMoneyThrowing\Packages\packages-lock.json
+        projectPath: Packages\packages-lock.json
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\AudioManager.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\AudioManager.asset
+        projectPath: ProjectSettings\AudioManager.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\EditorBuildSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\EditorBuildSettings.asset
+        projectPath: ProjectSettings\EditorBuildSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ProjectSettings.asset
+        projectPath: ProjectSettings\ProjectSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\QualitySettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\QualitySettings.asset
+        projectPath: ProjectSettings\QualitySettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\XRPackageSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\XRPackageSettings.asset
+        projectPath: ProjectSettings\XRPackageSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: H:\UnityProject\ARMoneyThrowing\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: e8a31831eb60523545a4ed4e68ef0bd03a4ed682
+      mergeA: 
+      mergeB: 
+      authorName: LawrenceTurnerW
+      authorEmail: watawata.takatan@gmail.com
+      commitEmail: watawata.takatan@gmail.com
+      commitName: LawrenceTurnerW
+      summary: Meta XR All in One SDK inport
+      description: 
+      timeString: 2024-03-16T22:28:02.000+09:00
+      commitTimeString: 2024-03-16T22:28:02.000+09:00
+      changes:
+      - path: Assets\Oculus.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus.meta
+        projectPath: Assets\Oculus.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Oculus\OculusProjectConfig.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus\OculusProjectConfig.asset
+        projectPath: Assets\Oculus\OculusProjectConfig.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Oculus\OculusProjectConfig.asset.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus\OculusProjectConfig.asset.meta
+        projectPath: Assets\Oculus\OculusProjectConfig.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Plugins.meta
+        projectPath: Assets\Plugins.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\Android.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Plugins\Android.meta
+        projectPath: Assets\Plugins\Android.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\Android\AndroidManifest.xml
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Plugins\Android\AndroidManifest.xml
+        projectPath: Assets\Plugins\Android\AndroidManifest.xml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\Android\AndroidManifest.xml.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Plugins\Android\AndroidManifest.xml.meta
+        projectPath: Assets\Plugins\Android\AndroidManifest.xml.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources.meta
+        projectPath: Assets\Resources.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\OVRPlatformToolSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OVRPlatformToolSettings.asset
+        projectPath: Assets\Resources\OVRPlatformToolSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\OVRPlatformToolSettings.asset.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OVRPlatformToolSettings.asset.meta
+        projectPath: Assets\Resources\OVRPlatformToolSettings.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\OculusRuntimeSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OculusRuntimeSettings.asset
+        projectPath: Assets\Resources\OculusRuntimeSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\OculusRuntimeSettings.asset.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OculusRuntimeSettings.asset.meta
+        projectPath: Assets\Resources\OculusRuntimeSettings.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR.meta
+        projectPath: Assets\XR.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\Loaders.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Loaders.meta
+        projectPath: Assets\XR\Loaders.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\Loaders\OculusLoader.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Loaders\OculusLoader.asset
+        projectPath: Assets\XR\Loaders\OculusLoader.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\Loaders\OculusLoader.asset.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Loaders\OculusLoader.asset.meta
+        projectPath: Assets\XR\Loaders\OculusLoader.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\Settings.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Settings.meta
+        projectPath: Assets\XR\Settings.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\Settings\OculusSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Settings\OculusSettings.asset
+        projectPath: Assets\XR\Settings\OculusSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\Settings\OculusSettings.asset.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Settings\OculusSettings.asset.meta
+        projectPath: Assets\XR\Settings\OculusSettings.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\XRGeneralSettingsPerBuildTarget.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\XRGeneralSettingsPerBuildTarget.asset
+        projectPath: Assets\XR\XRGeneralSettingsPerBuildTarget.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\XRGeneralSettingsPerBuildTarget.asset.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\XRGeneralSettingsPerBuildTarget.asset.meta
+        projectPath: Assets\XR\XRGeneralSettingsPerBuildTarget.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: fc30359d8bc2b7a04cbf8f22905e7fbfb3609e79
+      mergeA: 
+      mergeB: 
+      authorName: LawrenceTurnerW
+      authorEmail: watawata.takatan@gmail.com
+      commitEmail: watawata.takatan@gmail.com
+      commitName: LawrenceTurnerW
+      summary: "\u3075\u3041\u30FC\u3059\u3068\u3053\u307F\u3063\u3068"
+      description: 
+      timeString: 2024-03-16T22:24:01.000+09:00
+      commitTimeString: 2024-03-16T22:24:01.000+09:00
+      changes:
+      - path: Assets\Scenes.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Scenes.meta
+        projectPath: Assets\Scenes.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity.meta
+        fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Scenes\SampleScene.unity.meta
+        projectPath: Assets\Scenes\SampleScene.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\manifest.json
+        fullPath: H:\UnityProject\ARMoneyThrowing\Packages\manifest.json
+        projectPath: Packages\manifest.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\packages-lock.json
+        fullPath: H:\UnityProject\ARMoneyThrowing\Packages\packages-lock.json
+        projectPath: Packages\packages-lock.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\AudioManager.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\AudioManager.asset
+        projectPath: ProjectSettings\AudioManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ClusterInputManager.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ClusterInputManager.asset
+        projectPath: ProjectSettings\ClusterInputManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\DynamicsManager.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\DynamicsManager.asset
+        projectPath: ProjectSettings\DynamicsManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\EditorBuildSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\EditorBuildSettings.asset
+        projectPath: ProjectSettings\EditorBuildSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\EditorSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\EditorSettings.asset
+        projectPath: ProjectSettings\EditorSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\GraphicsSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\GraphicsSettings.asset
+        projectPath: ProjectSettings\GraphicsSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\InputManager.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\InputManager.asset
+        projectPath: ProjectSettings\InputManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\MemorySettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\MemorySettings.asset
+        projectPath: ProjectSettings\MemorySettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\NavMeshAreas.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\NavMeshAreas.asset
+        projectPath: ProjectSettings\NavMeshAreas.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\PackageManagerSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\PackageManagerSettings.asset
+        projectPath: ProjectSettings\PackageManagerSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+        projectPath: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\Physics2DSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\Physics2DSettings.asset
+        projectPath: ProjectSettings\Physics2DSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\PresetManager.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\PresetManager.asset
+        projectPath: ProjectSettings\PresetManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ProjectSettings.asset
+        projectPath: ProjectSettings\ProjectSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectVersion.txt
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ProjectVersion.txt
+        projectPath: ProjectSettings\ProjectVersion.txt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\QualitySettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\QualitySettings.asset
+        projectPath: ProjectSettings\QualitySettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\TagManager.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\TagManager.asset
+        projectPath: ProjectSettings\TagManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\TimeManager.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\TimeManager.asset
+        projectPath: ProjectSettings\TimeManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\TimelineSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\TimelineSettings.asset
+        projectPath: ProjectSettings\TimelineSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\UnityConnectSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\UnityConnectSettings.asset
+        projectPath: ProjectSettings\UnityConnectSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\VFXManager.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\VFXManager.asset
+        projectPath: ProjectSettings\VFXManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\VersionControlSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\VersionControlSettings.asset
+        projectPath: ProjectSettings\VersionControlSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\XRSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\XRSettings.asset
+        projectPath: ProjectSettings\XRSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\EditorUserSettings.asset
+        fullPath: H:\UnityProject\ARMoneyThrowing\UserSettings\EditorUserSettings.asset
+        projectPath: UserSettings\EditorUserSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Search.index
+        fullPath: H:\UnityProject\ARMoneyThrowing\UserSettings\Search.index
+        projectPath: UserSettings\Search.index
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Search.settings
+        fullPath: H:\UnityProject\ARMoneyThrowing\UserSettings\Search.settings
+        projectPath: UserSettings\Search.settings
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
     - commitID: e368daa9c0838aedcf4b6057c4ec77934a7f0ebc
       mergeA: 
       mergeB: 
@@ -1019,14 +1199,464 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2024-03-16T22:22:51.708+09:00
+      updatedTimeString: 2024-03-17T01:03:32.765+09:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2024-03-16T22:22:51.483+09:00
+      updatedTimeString: 2024-03-17T01:03:28.934+09:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: 2b4a23cbdf8ca8b0e027e5e873e286c31c7d6f5d
+        mergeA: 
+        mergeB: 
+        authorName: LawrenceTurnerW
+        authorEmail: watawata.takatan@gmail.com
+        commitEmail: watawata.takatan@gmail.com
+        commitName: LawrenceTurnerW
+        summary: "\u30D1\u30B9\u30B9\u30EB\u30FC\uFF06\u30CF\u30F3\u30C9\u30C8\u30E9\u30C3\u30AD\u30F3\u30B0\u5316"
+        description: 
+        timeString: 2024-03-17T00:31:01.000+09:00
+        commitTimeString: 2024-03-17T00:31:01.000+09:00
+        changes:
+        - path: Assets\Oculus\OculusProjectConfig.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus\OculusProjectConfig.asset
+          projectPath: Assets\Oculus\OculusProjectConfig.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\OVRBuildConfig.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OVRBuildConfig.asset
+          projectPath: Assets\Resources\OVRBuildConfig.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\OVRBuildConfig.asset.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OVRBuildConfig.asset.meta
+          projectPath: Assets\Resources\OVRBuildConfig.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\XR\Settings\OculusSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Settings\OculusSettings.asset
+          projectPath: Assets\XR\Settings\OculusSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ProjectSettings.asset
+          projectPath: ProjectSettings\ProjectSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\SceneTemplateSettings.json
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\SceneTemplateSettings.json
+          projectPath: ProjectSettings\SceneTemplateSettings.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: 2b978edb4554507ff527035b5f7309f194a9bf12
+        mergeA: 
+        mergeB: 
+        authorName: LawrenceTurnerW
+        authorEmail: watawata.takatan@gmail.com
+        commitEmail: watawata.takatan@gmail.com
+        commitName: LawrenceTurnerW
+        summary: "\u8A2D\u5B9A"
+        description: 
+        timeString: 2024-03-16T22:28:28.000+09:00
+        commitTimeString: 2024-03-16T22:28:28.000+09:00
+        changes:
+        - path: Packages\manifest.json
+          fullPath: H:\UnityProject\ARMoneyThrowing\Packages\manifest.json
+          projectPath: Packages\manifest.json
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Packages\packages-lock.json
+          fullPath: H:\UnityProject\ARMoneyThrowing\Packages\packages-lock.json
+          projectPath: Packages\packages-lock.json
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\AudioManager.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\AudioManager.asset
+          projectPath: ProjectSettings\AudioManager.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\EditorBuildSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\EditorBuildSettings.asset
+          projectPath: ProjectSettings\EditorBuildSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ProjectSettings.asset
+          projectPath: ProjectSettings\ProjectSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\QualitySettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\QualitySettings.asset
+          projectPath: ProjectSettings\QualitySettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\XRPackageSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\XRPackageSettings.asset
+          projectPath: ProjectSettings\XRPackageSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: H:\UnityProject\ARMoneyThrowing\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: e8a31831eb60523545a4ed4e68ef0bd03a4ed682
+        mergeA: 
+        mergeB: 
+        authorName: LawrenceTurnerW
+        authorEmail: watawata.takatan@gmail.com
+        commitEmail: watawata.takatan@gmail.com
+        commitName: LawrenceTurnerW
+        summary: Meta XR All in One SDK inport
+        description: 
+        timeString: 2024-03-16T22:28:02.000+09:00
+        commitTimeString: 2024-03-16T22:28:02.000+09:00
+        changes:
+        - path: Assets\Oculus.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus.meta
+          projectPath: Assets\Oculus.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Oculus\OculusProjectConfig.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus\OculusProjectConfig.asset
+          projectPath: Assets\Oculus\OculusProjectConfig.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Oculus\OculusProjectConfig.asset.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Oculus\OculusProjectConfig.asset.meta
+          projectPath: Assets\Oculus\OculusProjectConfig.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Plugins.meta
+          projectPath: Assets\Plugins.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\Android.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Plugins\Android.meta
+          projectPath: Assets\Plugins\Android.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\Android\AndroidManifest.xml
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Plugins\Android\AndroidManifest.xml
+          projectPath: Assets\Plugins\Android\AndroidManifest.xml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\Android\AndroidManifest.xml.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Plugins\Android\AndroidManifest.xml.meta
+          projectPath: Assets\Plugins\Android\AndroidManifest.xml.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources.meta
+          projectPath: Assets\Resources.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\OVRPlatformToolSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OVRPlatformToolSettings.asset
+          projectPath: Assets\Resources\OVRPlatformToolSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\OVRPlatformToolSettings.asset.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OVRPlatformToolSettings.asset.meta
+          projectPath: Assets\Resources\OVRPlatformToolSettings.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\OculusRuntimeSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OculusRuntimeSettings.asset
+          projectPath: Assets\Resources\OculusRuntimeSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\OculusRuntimeSettings.asset.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Resources\OculusRuntimeSettings.asset.meta
+          projectPath: Assets\Resources\OculusRuntimeSettings.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR.meta
+          projectPath: Assets\XR.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\Loaders.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Loaders.meta
+          projectPath: Assets\XR\Loaders.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\Loaders\OculusLoader.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Loaders\OculusLoader.asset
+          projectPath: Assets\XR\Loaders\OculusLoader.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\Loaders\OculusLoader.asset.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Loaders\OculusLoader.asset.meta
+          projectPath: Assets\XR\Loaders\OculusLoader.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\Settings.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Settings.meta
+          projectPath: Assets\XR\Settings.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\Settings\OculusSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Settings\OculusSettings.asset
+          projectPath: Assets\XR\Settings\OculusSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\Settings\OculusSettings.asset.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\Settings\OculusSettings.asset.meta
+          projectPath: Assets\XR\Settings\OculusSettings.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\XRGeneralSettingsPerBuildTarget.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\XRGeneralSettingsPerBuildTarget.asset
+          projectPath: Assets\XR\XRGeneralSettingsPerBuildTarget.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\XRGeneralSettingsPerBuildTarget.asset.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\XR\XRGeneralSettingsPerBuildTarget.asset.meta
+          projectPath: Assets\XR\XRGeneralSettingsPerBuildTarget.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: fc30359d8bc2b7a04cbf8f22905e7fbfb3609e79
+        mergeA: 
+        mergeB: 
+        authorName: LawrenceTurnerW
+        authorEmail: watawata.takatan@gmail.com
+        commitEmail: watawata.takatan@gmail.com
+        commitName: LawrenceTurnerW
+        summary: "\u3075\u3041\u30FC\u3059\u3068\u3053\u307F\u3063\u3068"
+        description: 
+        timeString: 2024-03-16T22:24:01.000+09:00
+        commitTimeString: 2024-03-16T22:24:01.000+09:00
+        changes:
+        - path: Assets\Scenes.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Scenes.meta
+          projectPath: Assets\Scenes.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity.meta
+          fullPath: H:\UnityProject\ARMoneyThrowing\Assets\Scenes\SampleScene.unity.meta
+          projectPath: Assets\Scenes\SampleScene.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\manifest.json
+          fullPath: H:\UnityProject\ARMoneyThrowing\Packages\manifest.json
+          projectPath: Packages\manifest.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\packages-lock.json
+          fullPath: H:\UnityProject\ARMoneyThrowing\Packages\packages-lock.json
+          projectPath: Packages\packages-lock.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\AudioManager.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\AudioManager.asset
+          projectPath: ProjectSettings\AudioManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ClusterInputManager.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ClusterInputManager.asset
+          projectPath: ProjectSettings\ClusterInputManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\DynamicsManager.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\DynamicsManager.asset
+          projectPath: ProjectSettings\DynamicsManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\EditorBuildSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\EditorBuildSettings.asset
+          projectPath: ProjectSettings\EditorBuildSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\EditorSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\EditorSettings.asset
+          projectPath: ProjectSettings\EditorSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\GraphicsSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\GraphicsSettings.asset
+          projectPath: ProjectSettings\GraphicsSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\InputManager.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\InputManager.asset
+          projectPath: ProjectSettings\InputManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\MemorySettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\MemorySettings.asset
+          projectPath: ProjectSettings\MemorySettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\NavMeshAreas.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\NavMeshAreas.asset
+          projectPath: ProjectSettings\NavMeshAreas.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\PackageManagerSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\PackageManagerSettings.asset
+          projectPath: ProjectSettings\PackageManagerSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+          projectPath: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\Physics2DSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\Physics2DSettings.asset
+          projectPath: ProjectSettings\Physics2DSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\PresetManager.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\PresetManager.asset
+          projectPath: ProjectSettings\PresetManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ProjectSettings.asset
+          projectPath: ProjectSettings\ProjectSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectVersion.txt
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ProjectVersion.txt
+          projectPath: ProjectSettings\ProjectVersion.txt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\QualitySettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\QualitySettings.asset
+          projectPath: ProjectSettings\QualitySettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\TagManager.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\TagManager.asset
+          projectPath: ProjectSettings\TagManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\TimeManager.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\TimeManager.asset
+          projectPath: ProjectSettings\TimeManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\TimelineSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\TimelineSettings.asset
+          projectPath: ProjectSettings\TimelineSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\UnityConnectSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\UnityConnectSettings.asset
+          projectPath: ProjectSettings\UnityConnectSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\VFXManager.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\VFXManager.asset
+          projectPath: ProjectSettings\VFXManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\VersionControlSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\VersionControlSettings.asset
+          projectPath: ProjectSettings\VersionControlSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\XRSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\XRSettings.asset
+          projectPath: ProjectSettings\XRSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\EditorUserSettings.asset
+          fullPath: H:\UnityProject\ARMoneyThrowing\UserSettings\EditorUserSettings.asset
+          projectPath: UserSettings\EditorUserSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Search.index
+          fullPath: H:\UnityProject\ARMoneyThrowing\UserSettings\Search.index
+          projectPath: UserSettings\Search.index
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Search.settings
+          fullPath: H:\UnityProject\ARMoneyThrowing\UserSettings\Search.settings
+          projectPath: UserSettings\Search.settings
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
       - commitID: e368daa9c0838aedcf4b6057c4ec77934a7f0ebc
         mergeA: 
         mergeB: 
@@ -1120,7 +1750,7 @@ MonoBehaviour:
       installSettingsHidden: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2024-03-16T22:23:46.763+09:00
+      updatedTimeString: 2024-03-17T01:03:28.906+09:00
       cacheType: 1
     newRepositoryRemoteUrl: git@github.com:LawrenceTurnerW/ARMoneyThrowing.git
     repositoryRemoteName: origin
@@ -1133,7 +1763,7 @@ MonoBehaviour:
       newGitEmail: watawata.takatan@gmail.com
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 2024-03-16T22:22:09.276+09:00
+        updatedTimeString: 2024-03-17T01:03:35.873+09:00
         cacheType: 8
       configSettingsHidden: 0
     repositorySettingsHidden: 0
@@ -1142,10 +1772,10 @@ MonoBehaviour:
     uiSceneSettingsHidden: 0
     uiProjectSettingsHidden: 0
   locksView:
-    currentRemoteHasUpdate: 0
+    currentRemoteHasUpdate: 1
     currentStatusEntriesHasUpdate: 0
     currentLocksHasUpdate: 0
-    keychainHasUpdate: 0
+    keychainHasUpdate: 1
     locksControl:
       scroll: {x: 0, y: 0}
       gitLockEntries: []
@@ -1164,18 +1794,30 @@ MonoBehaviour:
             email: 
           lockedAtString: 
         gitFileStatus: 0
-        lockedAt: 
+        lockedAt: 1 1 0001, 09:00
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2024-03-17T01:03:28.906+09:00
+      cacheType: 1
     lastLocksChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2024-03-17T01:03:31.047+09:00
+      cacheType: 7
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2024-03-17T01:03:28.926+09:00
+      cacheType: 6
     lockedFiles: []
-    gitStatusEntries: []
+    gitStatusEntries:
+    - path: ProjectSettings\ProjectSettings.asset
+      fullPath: H:\UnityProject\ARMoneyThrowing\ProjectSettings\ProjectSettings.asset
+      projectPath: ProjectSettings\ProjectSettings.asset
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: UserSettings\Layouts\default-2022.dwlt
+      fullPath: H:\UnityProject\ARMoneyThrowing\UserSettings\Layouts\default-2022.dwlt
+      projectPath: UserSettings\Layouts\default-2022.dwlt
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
     currentUsername: 
     unlockFileMenuContent:
       m_Text: Release Lock
@@ -1192,7 +1834,7 @@ MonoBehaviour:
   statusAhead: 0
   statusBehind: 0
   hasItemsToCommit: 1
-  isTrackingRemoteBranch: 0
+  isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: master
     m_Image: {fileID: 0}
@@ -1202,13 +1844,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2024-03-16T22:23:46.763+09:00
+    updatedTimeString: 2024-03-17T01:18:23.470+09:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2024-03-16T22:24:02.412+09:00
+    updatedTimeString: 2024-03-17T01:03:28.934+09:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2024-03-16T22:25:24.094+09:00
+    updatedTimeString: 2024-03-17T01:03:28.926+09:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -1226,7 +1868,7 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 1
+  repositoryProgressValue: 0.9992727
   repositoryProgressMessage: 
   appManagerProgressValue: 1
   appManagerProgressMessage: 
@@ -1954,7 +2596,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 16fbffff
+      m_ExpandedIDs: 2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2019,8 +2661,8 @@ MonoBehaviour:
   m_SearchText: 
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 272fd499
-    m_LastClickedID: -1714147545
+    m_SelectedIDs: 210c6503
+    m_LastClickedID: 56953889
     m_ExpandedIDs: c50c79c6000000004f0a7f2e
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2149,10 +2791,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 584
+    x: 618
     y: 72.66667
-    width: 1320.6666
-    height: 771.6667
+    width: 1398
+    height: 770.3333
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2170,8 +2812,8 @@ MonoBehaviour:
   m_SearchText: 
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7ccc52ac
-    m_LastClickedID: -1403859844
+    m_SelectedIDs: 12fceb38
+    m_LastClickedID: 954989586
     m_ExpandedIDs: 2956c29689577ec10000000001fecd11
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2281,9 +2923,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 865.3334
+    y: 864
     width: 2017
-    height: 533.6667
+    height: 535.00006
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2305,7 +2947,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Packages/com.meta.xr.sdk.core/Prefabs
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -2313,16 +2955,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets
+  - Packages/com.meta.xr.sdk.core/Prefabs
   m_LastFoldersGridSize: 96
-  m_LastProjectPath: H:\UnityProject\My project
+  m_LastProjectPath: H:\UnityProject\ARMoneyThrowing
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f4680000
-    m_LastClickedID: 26868
-    m_ExpandedIDs: 
+    m_SelectedIDs: 4a700000
+    m_LastClickedID: 28746
+    m_ExpandedIDs: 00000000e46f00002270000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2350,7 +2992,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000e46f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2375,8 +3017,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 38faffff
-    m_LastClickedInstanceID: -1480
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300002e6f0000406f000072650000626f0000766f000044700000b4bc0000d8bb0000c2ac050004590700c094070002dc07002ade07005af7070000000000c67000001a71000058280100
     m_RenameOverlay:
@@ -2480,7 +3122,7 @@ MonoBehaviour:
     m_CachedPref: 151
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -24034
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
