@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Logging;
 
 public class NewBehaviourScript : MonoBehaviour
 {
@@ -39,10 +40,12 @@ public class NewBehaviourScript : MonoBehaviour
                 money.transform.position = m_lunchPos.position;
                 money.transform.rotation = m_lunchPos.rotation;
 
+                Rigidbody rigidbody = money.GetComponent<Rigidbody>();
+                rigidbody.AddFor​​ce(money.transform.right * -180);
+
                 //再発射不可能にして、0.5秒後に再発射可能にする
                 canShot = false;
                 StartCoroutine(CanBeShot());
-
             }
         }
     }
