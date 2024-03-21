@@ -41,9 +41,10 @@ public class NewBehaviourScript : MonoBehaviour
                 money.transform.rotation = m_lunchPos.rotation;
 
                 Rigidbody rigidbody = money.GetComponent<Rigidbody>();
-                rigidbody.AddFor​​ce(money.transform.right * -180);
+                rigidbody.AddFor​​ce(money.transform.right * -18);
+                rigidbody.AddFor​​ce(money.transform.up * Random.Range(-5, 6));
 
-                //再発射不可能にして、0.5秒後に再発射可能にする
+                //再発射不可能にして、0.05秒後に再発射可能にする
                 canShot = false;
                 StartCoroutine(CanBeShot());
             }
@@ -53,7 +54,7 @@ public class NewBehaviourScript : MonoBehaviour
     // コルーチン
     private IEnumerator CanBeShot()
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.05f);
         canShot = true;
     }
 }
