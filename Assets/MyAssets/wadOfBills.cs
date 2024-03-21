@@ -6,8 +6,8 @@ public class wadOfBills : MonoBehaviour
 {
     void Start()
     {
-        // 何があっても7秒後に削除
-        Destroy(this.gameObject, 7.0f);
+        // 何があっても15秒後に削除
+        Destroy(this.gameObject, 15.0f);
     }
 
     // Update is called once per frame

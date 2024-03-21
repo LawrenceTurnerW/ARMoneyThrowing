@@ -13,8 +13,8 @@ public class oneMoney : MonoBehaviour
     {
         inversion = (Random.Range(0, 2) == 0) ? 1 : -1;
         rnd = Random.Range(90.0f, 180.0f);
-        // 何があっても5秒後に削除
-        Destroy(this.gameObject, 5.0f);
+        // 何があっても10秒後に削除
+        Destroy(this.gameObject, 10.0f);
     }
 
     // Update is called once per frame

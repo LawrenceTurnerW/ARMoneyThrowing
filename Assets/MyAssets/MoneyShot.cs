@@ -91,7 +91,7 @@ public class NewBehaviourScript : MonoBehaviour
         {
             return -18;
         }
-        return -200;
+        return -300;
     }
 
     // コルーチン
