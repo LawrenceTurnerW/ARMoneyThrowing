@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1517627500434445542}
   - component: {fileID: -6610069545793101874}
   m_Layer: 0
-  m_Name: 10000
+  m_Name: oneMoney
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
