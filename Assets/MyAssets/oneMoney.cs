@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Money : MonoBehaviour
+public class oneMoney : MonoBehaviour
 {
     bool touchTheGround = false;
     float rnd;
